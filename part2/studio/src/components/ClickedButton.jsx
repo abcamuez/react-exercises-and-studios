@@ -1,5 +1,15 @@
+import  "./styling.css"
+import React from 'react';
+
 function ClickedButton() {
-  return;
+  function handleClick() {
+    alert("You are removed from this post!");
+  }
+  return (
+    <button id="clickedButton" onClick={handleClick}>
+      Saved
+    </button>
+  );
 }
 
 export default ClickedButton;
